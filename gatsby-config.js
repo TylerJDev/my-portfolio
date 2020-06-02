@@ -1,17 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Portfolio`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Tyler Jones`,
+      summary: `and his journey through the web.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `My portfolio`,
+    siteUrl: `https://tylerwebdev.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `TylerJ_Dev`,
     },
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -61,8 +62,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `My Portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

@@ -1,0 +1,89 @@
+@mixin monty-python {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+$bg--shadow: 4px 4px 0px black;
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    height: 350px;
+    width: 270px;
+    box-shadow: $bg--shadow;
+    &:hover {
+        h3 {
+            color: blue;
+            text-decoration: underline;
+        }
+    }
+    .project_link {
+        color: black;
+        height: 90%;
+        box-shadow: none;
+        &:focus {
+            background-color: unset !important;
+            color: black !important;  
+            outline: none;
+        }
+        &:focus-within {
+            h3 {
+                color: blue;
+                text-decoration: underline;
+            }
+
+            .project_inner {
+                box-shadow: $bg--shadow;
+                border-style: dashed;
+            }
+        }
+    }
+    .project_inner {
+        margin: 0 auto;
+        width: 250px;
+        height: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        transition: 500ms;
+        &:hover {
+            transition: 500ms;
+            box-shadow: $bg--shadow;
+            border-style: dashed;
+        }
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .project_title {
+        h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+    }
+
+    .project_bio {
+        p {
+            text-align: center;
+        }
+    }
+
+    .project_skills {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-bottom: 0px;
+            li {
+                border: 1px solid black;
+                padding: 3px;
+                background-color: black;
+                color: white;
+                font-family: 'IBM Plex Sans', sans-serif;
+            }
+        }
+    }
+}

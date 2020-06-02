@@ -1,0 +1,31 @@
+article {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 900px;
+    .article_heading {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      justify-content: flex-start;
+      max-height: 70px;
+      height: unset;
+      margin-bottom: 7%;
+    }
+
+    h1 {
+        color: blue;
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin-top: 1.5rem;
+    }
+    
+    h2 {
+        font-family: 'Montserrat','Georgia',serif;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    ul, ol {
+        margin-left: 20px;
+    }
+}

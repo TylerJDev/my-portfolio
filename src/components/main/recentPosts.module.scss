@@ -1,0 +1,29 @@
+.recentPosts {
+    padding: 30px;
+    h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400; 
+        margin-top: 0px;
+    }
+
+    h4 {
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 43px;
+    }
+}
+
+.recent {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    box-shadow: 4px 4px 0px black;
+}

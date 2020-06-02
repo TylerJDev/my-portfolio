@@ -1,0 +1,23 @@
+footer {
+    border: 1px solid grey;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    .footer-nav_left {
+        width: 25%;
+        display: flex;
+    }
+    
+    .footer-nav_right {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        a { 
+            color: black !important;
+        }
+    }
+}
