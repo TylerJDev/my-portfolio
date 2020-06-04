@@ -15,4 +15,10 @@ $bg--shadow: 4px 4px 0px black;
             @include monty-python;
         }
     }
+
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
 }

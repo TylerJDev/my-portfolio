@@ -39,8 +39,9 @@ const Layout = ({ children }) => {
   return (
     <>
     <button id="skip-to-main" onClick={focusMain}>Skip to Main Content</button>
+    <div id="prefer"></div>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      <div className="main__container"
         style={{
           margin: `0 auto`,
           padding: `0 1.0875rem 1.45rem`,

@@ -13,6 +13,8 @@ $bg--shadow: 4px 4px 0px black;
     height: 350px;
     width: 270px;
     box-shadow: $bg--shadow;
+    margin-right: 15px;
+    margin-bottom: 20px;
     &:hover {
         h3 {
             color: blue;
@@ -47,6 +49,9 @@ $bg--shadow: 4px 4px 0px black;
         padding: 10px;
         border: 1px solid black;
         transition: 500ms;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         &:hover {
             transition: 500ms;
             box-shadow: $bg--shadow;
@@ -67,13 +72,14 @@ $bg--shadow: 4px 4px 0px black;
     .project_bio {
         p {
             text-align: center;
+            font-size: 0.9rem;
         }
     }
 
     .project_skills {
         ul {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             list-style: none;
             flex-wrap: wrap;
             margin-bottom: 0px;

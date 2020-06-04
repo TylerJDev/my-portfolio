@@ -10,6 +10,15 @@ class Header extends Component {
     }
   }
 
+  componentDidMount() {
+    const preferDarkLight = getComputedStyle(document.querySelector('#prefer')).getPropertyValue('content');
+    if (preferDarkLight.length && preferDarkLight === '"dark"' && !document.body.classList.contains('dark')) {
+      document.body.classList.add('dark');
+
+      this.setState({darkMode: true})
+    }
+  }
+
   darkMode = () => {
     const bodyElem = document.body;
     if (bodyElem.classList.contains('dark')) {
@@ -29,7 +38,7 @@ class Header extends Component {
             <Link to="/">Tyler Jones</Link>
           </div>  
 
-          <div className={headerStyles.navi_right}>
+          <div className={headerStyles.navi_right + ' header__right_container'}>
             <Link to="/projects">Projects</Link>
             <Link to="/about">About</Link>
             <Link to="/blog">Blog</Link>
