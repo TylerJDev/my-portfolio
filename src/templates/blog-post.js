@@ -11,6 +11,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  const postAuthor = 'Tyler Jones'; // Placeholder value
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -18,25 +19,34 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article className={blogStyles.article}>
+      <article className={blogStyles.article + ' blogPost__article'}>
         <header className={blogStyles.article_heading}>
-          <h1 style={{marginTop: rhythm(1), marginBottom: 0,}}>
-            {post.frontmatter.title}
-          </h1>
-          <div>{JSON.stringify(post.frontmatter.tags)}</div>
-          <p>
-            {post.frontmatter.date}
-          </p>
+          <div className={blogStyles.inner_header}>
+            <h1>
+              {post.frontmatter.title}
+            </h1>
+
+            <div className={blogStyles.side_header}>
+              <p>
+                <strong>{post.frontmatter.date}</strong> | By {postAuthor}
+                <br/>
+                {post.frontmatter.tags !== null &&
+                  <span>
+                   <strong>Tags:</strong> <span className={blogStyles.tags}>{post.frontmatter.tags.join(', ')}</span>
+                  </span>
+                }
+                </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className={blogStyles.sub_heading}>{post.frontmatter.description}</h2>
+          </div>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
       </article>
 
-      <nav>
+      <nav aria-label="pagination"> 
         <ul
           style={{
             display: `flex`,
@@ -48,14 +58,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={previous.fields.slug} rel="prev" className={blogStyles.nextPrevLink}>
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link to={next.fields.slug} rel="next" className={blogStyles.nextPrevLink}>
                 {next.frontmatter.title} →
               </Link>
             )}

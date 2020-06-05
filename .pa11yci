@@ -1,0 +1,10 @@
+{
+    "defaults": {
+        "timeout": 10000
+    },
+    "urls": [
+        "http://localhost:8000/",
+        "http://localhost:8000/tags",
+        "http://localhost:8000/blog"
+    ]
+}

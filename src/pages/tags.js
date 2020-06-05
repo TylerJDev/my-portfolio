@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Layout from "../components/layout"
 
 // Utilities
 import kebabCase from "lodash/kebabCase"
@@ -16,21 +17,38 @@ const TagsPage = ({
     },
   },
 }) => (
-  <div>
-    <Helmet title={title} />
-    <div>
-      <h1>Tags</h1>
-      <ul>
-        {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
-        ))}
-      </ul>
+  <Layout>
+    <div id="tagsPage">
+      <Helmet title={title} />
+      <div>
+        <h1>Tags</h1>
+        <div id="tags__container">
+          {group.map((tag, index) => (
+            <div className="tag_container">
+              <h2>
+                <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                  {tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </h2>
+
+              <ul>
+                {tag.nodes.slice(0, 3).map((post, idx) => (
+                  <li>
+                    <Link to={tag.edges[0].node.fields.slug}>{post.frontmatter.title}</Link>
+                  </li>
+                ))}
+              </ul>
+              {tag.nodes.length > 3 &&
+                <Link to="/blog" className="seeMorePosts">See more</Link>
+              }
+            </div>
+          ))}
+          
+          {/* {JSON.stringify(tag.nodes)} */}
+        </div>
+      </div>
     </div>
-  </div>
+  </Layout>
 )
 
 TagsPage.propTypes = {
@@ -64,6 +82,20 @@ export const pageQuery = graphql`
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
+        nodes {
+          frontmatter {
+            description
+            title
+            date
+          }
+        }
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
       }
     }
   }
