@@ -7,6 +7,7 @@ import kebabCase from "lodash/kebabCase"
 
 // Components
 import { Helmet } from "react-helmet"
+import SEO from "../components/seo"
 import { Link, graphql } from "gatsby"
 
 const TagsPage = ({
@@ -19,7 +20,8 @@ const TagsPage = ({
 }) => (
   <Layout>
     <div id="tagsPage">
-      <Helmet title={title} />
+      {/* <Helmet title={title} /> */}
+      <SEO title="Tags" />
       <div>
         <h1>Tags</h1>
         <div id="tags__container">

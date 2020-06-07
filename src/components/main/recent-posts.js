@@ -11,6 +11,9 @@ const RecentPosts = () => (
           node {
             id
             excerpt(pruneLength: 250)
+            fields {
+              slug
+            }
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
               title
@@ -23,10 +26,10 @@ const RecentPosts = () => (
     render={data => (
       <div className={recentPostStyles.recentPosts}>
           <h2>Blog</h2>
-          <h3 className="sub-blog">Where I like to talk about all sorts of things</h3>
+          <h3 className="sub-blog">Where I like to talk about accessibility, Front-End Development, TDD, JavaScript and a lot more!</h3>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div className="blog__post-container" key={node.id}>
-              <Link to={`/${node.frontmatter.title}`} className="blog__post">
+              <Link to={`/${node.fields.slug}`} className="blog__post">
                 <h4>{node.frontmatter.title}</h4>
                 <p>{node.excerpt}</p>
               </Link>

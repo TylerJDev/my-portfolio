@@ -12,10 +12,10 @@ class Header extends Component {
 
   componentDidMount() {
     const preferDarkLight = getComputedStyle(document.querySelector('#prefer')).getPropertyValue('content');
-    if (preferDarkLight.length && preferDarkLight === '"dark"' && !document.body.classList.contains('dark')) {
-      document.body.classList.add('dark');
 
-      this.setState({darkMode: true})
+    if (preferDarkLight.length && preferDarkLight === '"dark"' && !document.body.classList.contains('dark') && localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark');
+      this.setState({darkMode: true});
     }
   }
 
@@ -26,8 +26,9 @@ class Header extends Component {
     } else {
       bodyElem.classList.add('dark');
     }
-
+    
     this.setState({darkMode: bodyElem.classList.contains('dark')});
+    localStorage.setItem('darkMode', String(bodyElem.classList.contains('dark')));
   }
 
   render() {
@@ -42,7 +43,7 @@ class Header extends Component {
             <Link to="/projects">Projects</Link>
             <Link to="/about">About</Link>
             <Link to="/blog">Blog</Link>
-            <button onClick={this.darkMode}>{this.state.darkMode ? 'Light Mode' : 'Dark Mode'}</button>
+            <button onClick={this.darkMode} id="darkLight_switch" className={document.body.classList.contains('dark') ? 'dark' : 'light'}><span>{document.body.classList.contains('dark') === true ? 'Light Mode' : 'Dark Mode'}</span></button>
           </div>
         </nav>
       </header>

@@ -6,9 +6,9 @@ const AboutBio = () => (
   <div className={aboutStyles.about}>
     <div>
       <h2>A little about me</h2>
-      <p> Stemming from a love of art, building, and those tiny lego pieces you would lose in a day, I always wanted to be a creator, a designer, and foremost to be able to learn something new everyday. 
-        Today, I'm a Web Developer, driven by a love of learning. I have skills in various areas, and I'm not afraid to build something new.
-        So come on and say hello!
+      <p>I love building and learning, which is part of the reason for being a web developer. Building <strong>accessible web applications</strong> is and will forever be a must when building for the web.
+        With the vastness that is Web Development, I enjoy trying out new things which may improve my workflow, or to get a better perspective.
+        With that being said, <strong>come on and say hello!</strong>
       </p>
       <Link to="/about">Read more about me &#8594;</Link>
     </div>

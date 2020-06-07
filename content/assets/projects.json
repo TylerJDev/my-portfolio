@@ -2,32 +2,26 @@
     {
       "name": "YouTube-Timestamps",
       "description": "YouTube Timestamps is a plugin to track timestamps on any video which contains them.",
-      "builtWith": ["JavaScript", "CSS", "HTML", "Chrome Extension API"],
+      "builtWith": ["JavaScript", "CSS", "HTML", "Chrome Extension"],
       "linkTo": "https://github.com/TylerJDev/YouTube-Timestamps"
     },
     {
       "name": "DJ-With-Friends",
       "description": "A way to listen to Spotify with friends!",
-      "builtWith": ["Vue", "SCSS/SASS", "Node.js", "Express", "Jest"],
-      "linkTo": "https://github.com/TylerJDev/DJ-With-Friends"
+      "builtWith": ["Vue", "SCSS/SASS", "Node.js", "Express.js", "Jest"],
+      "linkTo": "https://djwithfriends.com/"
     },
     {
       "name": "My Portfolio",
       "description": "My portfolio, created to showcase my projects.",
-      "builtWith": ["React.js", "Gatsby.js", "SCSS/SASS", "Netlify CMS"],
+      "builtWith": ["React", "Gatsby", "SCSS/SASS", "Netlify CMS"],
       "linkTo": "https://github.com/TylerJDev/my-blog"
 
     },
     {
       "name": "Dialogue-To-Anki",
-      "description": "This is a small python project to process dialogue from games (I.e, Skyrim, Fallout 4) to Anki friendly formats (and more!)",
+      "description": "This is a small python project to process dialogue from games into Anki friendly formats.",
       "builtWith": ["Python"],
       "linkTo": "https://github.com/TylerJDev/Dialogue-To-Anki"
-    },
-    {
-      "name": "A Movie List",
-      "description": "Project made so that anybody can create a list with their favorite movies or TV shows & share with others.",
-      "builtWith": ["React", "SCSS/SASS", "Node.js", "Express", "Jest"],
-      "linkTo": "#"
     }
 ]

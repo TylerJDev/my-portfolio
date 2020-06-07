@@ -14,15 +14,15 @@ const AboutPage = () => (
         </div>
 
         <div id="aboutMe">
-          <p>Stemming from a love of art, building, and those tiny lego pieces you would lose in a day, I always wanted to be a creator, a designer, and foremost to be able to learn something new everyday. 
-            Today, I'm a Web Developer, driven by a love of learning. I have skills in various areas, and I'm not afraid to build something new.
-            
-            So come on and say hello!
-          </p>
-
-          <h2>What I know</h2>
-          <p>I love learning new things. Since web development is a vast and growing ecosystem of technology, you could say it was perfect for me. 
-             I have a few skills now that I can say that I'm proficient in, but I'm a quick learner and able to take on new things!
+          <p>Hello there! My name is Tyler! Professionally I'm a web developer and I love crafting up new solutions.
+            I enjoy learning, which with web development the limit is the moon.
+            <br/>
+            <br/>
+            I also enjoy making things accessible. Unfortunately, a large part of the web is inaccessible in some shape or form. I try my best to create the most accessible products possible.
+            I firmly believe that the web should be accessible to all.
+            <br/>
+            <br/>
+            I currently reside in <strong>Atlanta, Georgia</strong>.
           </p>
         </div>
 

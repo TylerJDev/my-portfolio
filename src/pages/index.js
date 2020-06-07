@@ -12,9 +12,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div id="banner" className="container">
       <h1>Hello, my name is Tyler</h1>
-      <h2>Hi there! I'm a web developer, with a knack for accessibility!<br/></h2>
+      <h2>Hi there! I'm a web developer, with a knack for building!<br/>
+      I specialize in Front-End Development, Accessibility and Test Driven Development.</h2>
 
-      <div id="banner__bg"></div>
+      <div id="banner__bg">
+        <div id="banner_moon"></div>
+      </div>
     </div>
 
     <div id="aboutBio" className="container">
