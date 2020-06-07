@@ -43,7 +43,7 @@ class Header extends Component {
             <Link to="/projects">Projects</Link>
             <Link to="/about">About</Link>
             <Link to="/blog">Blog</Link>
-            <button onClick={this.darkMode} id="darkLight_switch" className={document.body.classList.contains('dark') ? 'dark' : 'light'}><span>{document.body.classList.contains('dark') === true ? 'Light Mode' : 'Dark Mode'}</span></button>
+            <button onClick={this.darkMode} id="darkLight_switch" className={document === undefined || document.body.classList.contains('dark') ? 'dark' : 'light'}><span>{document === undefined || document.body.classList.contains('dark') === true ? 'Light Mode' : 'Dark Mode'}</span></button>
           </div>
         </nav>
       </header>
