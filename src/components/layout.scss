@@ -108,6 +108,11 @@ nav {
       color: white !important;
     }
     @include link-focus;
+    &[aria-current] {
+      background-color: black;
+      color: white !important;
+      box-shadow: $bg--shadow_light
+    }
   }
 }
 
@@ -553,6 +558,39 @@ body.dark {
     h1, h4 {
       color: black !important;
     }
+  }
+
+  nav {
+    a:hover, a:focus {
+      color: white !important;
+      border: 1px solid white;
+    }
+  }
+
+  footer {
+    a:hover, a:focus {
+      border: 1px solid white;
+    }
+    a[aria-current][href] {
+      color: black !important;
+    }
+  }
+  
+  [aria-current] {
+    background-color: white;
+    color: black !important;
+    border: 1px solid black;
+    box-shadow: $bg--shadow_reverse;
+  }
+
+  #main_tohp:focus {
+    border: 1px solid white;
+  }
+
+  #main_tohp[aria-current] {
+    background-color: transparent;
+    color: white !important;
+    text-decoration: underline;
   }
 }
 
