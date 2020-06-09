@@ -71,3 +71,6 @@ yarn-error.log
 
 # Other
 notes.txt
+
+# Test blog posts
+content/blog/*
