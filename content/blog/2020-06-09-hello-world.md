@@ -2,7 +2,7 @@
 title: Hello, World!
 date: 2020-06-09T22:20:44.991Z
 description: This is my first post.
-tags: ["short"]
+tags: ["intro", 'first post']
 ---
 Hello! I'm Tyler, this is my first post on my blog using Netlify CMS.
 
