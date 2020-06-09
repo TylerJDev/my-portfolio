@@ -15,7 +15,7 @@
       "name": "My Portfolio",
       "description": "My portfolio, created to showcase my projects.",
       "builtWith": ["React", "Gatsby", "SCSS/SASS", "Netlify CMS"],
-      "linkTo": "https://github.com/TylerJDev/my-blog"
+      "linkTo": "https://github.com/TylerJDev/my-portfolio"
 
     },
     {
