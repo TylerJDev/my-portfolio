@@ -9,6 +9,6 @@ tags:
 ---
 Hello! I'm Tyler, this is my first post on my blog using Netlify CMS.
 
-This blog will mostly feature articles about programming, accessibility, but may feature some off topic articles every once in awhile.
+This blog will mostly feature articles about programming, accessibility, but may feature some off topic articles every once in a while.
 
 I hope you enjoy your stay!
