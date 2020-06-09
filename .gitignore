@@ -73,4 +73,5 @@ yarn-error.log
 notes.txt
 
 # Test blog posts
-content/blog/*
+content/blog/*/*
+content/blog/*.md
