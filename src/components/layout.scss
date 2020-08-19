@@ -564,6 +564,17 @@ body.dark {
     color: white;
   }
 
+  article.upcoming_post {
+    color: white !important;
+    background-color: transparent;
+    h3 {
+      color: white;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
   article {
     @include mono-bg;
     box-shadow: $bg--shadow;
