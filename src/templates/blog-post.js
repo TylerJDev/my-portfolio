@@ -27,7 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </h1>
 
             <div className={blogStyles.side_header}>
-              <p>
+              <p className={blogStyles.details}>
                 <strong>{post.frontmatter.date}</strong> | By {postAuthor}
                 <br/>
                 {post.frontmatter.tags !== null &&

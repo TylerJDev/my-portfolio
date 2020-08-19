@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Why role=\"button\" is not enough",
+      "description": "The attribute role=\"button\" is often used in place of a native <button> element, yet this is not enough to ensure the element is actually accessible.",
+      "expected": "2020-09-07"
+    },
+    {
+      "name": "Partial links are inaccessible",
+      "description": "Partial links are the bane of the internet, so why are they so common?",
+      "expected": "2020-09"
+    },
+    {
+      "name": "How accessible are emojis?",
+      "description": "Emojis are unavoidable. Let's see how accessible they truly are on the web.",
+      "expected": "2020-10"
+    }
+]
