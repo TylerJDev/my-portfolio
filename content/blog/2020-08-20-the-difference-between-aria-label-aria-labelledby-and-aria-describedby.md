@@ -28,7 +28,7 @@ Here’s an example of what it would look like in markup:
 
 `<button aria-label="Hello, world!">Hi</button>`
 
-![ ](/img/accessibility_tree_chrome.png)
+![Accessibility tree within Chrome DevTools](/img/accessibility_tree_chrome.png)
 
 **Example 1: An image of the accessibility tree within Chrome DevTools.**
 
@@ -107,7 +107,7 @@ This is because aria-labelledby takes precedence over the inner text content of 
 
 Here's what it looks like in the accessibility tree:
 
-![ ](/img/accessibility_tree_chrome_2.png)
+![](/img/accessibility_tree_chrome_2.png)
 
 **Example 3: An image of the accessibility tree, showing the value received from "aria-labelledby". That value being "Tyler".**
 
@@ -130,7 +130,7 @@ Here’s a quick example:
 
 The above would look like the following, within the accessibility tree:
 
-![ ](/img/accessibility_tree_chrome_3.png)
+![](/img/accessibility_tree_chrome_3.png)
 
 **Example 4: An image of the accessibility tree, showing the values provided by the aria-labelledby, using multiple references.**
 
