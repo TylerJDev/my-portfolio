@@ -72,7 +72,7 @@ Here’s an example:
 
 `<button aria-label="Close">Save and Close</button>`
 
-![ Chrome DevTools, showing applied accessible name](/img/accessibility_tree_chrome_1.png)
+![Chrome DevTools, showing applied accessible name](/img/accessibility_tree_chrome_1.png)
 
 **Example 2: An image of the accessibility tree, showing the current accessible name, which is "Close".**
 
