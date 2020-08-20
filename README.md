@@ -12,9 +12,9 @@ I love building and learning, it's a part of the reason why I'm a web developer.
 - [The difference between aria-label, aria-labelledby and aria-describedby](https://trjones.dev/2020-08-20-the-difference-between-aria-label-aria-labelledby-and-aria-describedby/)
 
 ### Upcoming Posts
-- *Why role="button" is not enough*
-- *Partial links are inaccessible*
-- *How accessible are emojis?*
+1. *Why role="button" is not enough*
+2. *Partial links are inaccessible*
+3. *How accessible are emojis?*
 
 ## Me Around the Web 🛬
 1. **Website**: [trjones.dev](trjones.dev)
