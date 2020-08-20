@@ -144,7 +144,7 @@ The above would look like the following, within the accessibility tree:
 
 `aria-describedby` is very similar to `aria-labelledby`. Both reference other elements using a ID reference in order to gather a text alternative, but aria-describedby is used to “describe” the current element (or elements), rather than just label them.
 
-This means that this is generally used more when providing a description to an element which tends to be based from a pre-existing element. Unlike `aria-labelledby`, `aria-describedby` will not take precedence over the inner text content, it will supplement the text content if there is any.
+This means that this is generally used more when providing a description to an element which tends to be based on a pre-existing element. Unlike `aria-labelledby`, `aria-describedby` will not take precedence over the inner text content, it will supplement the text content if there is any.
 
 Here’s an example:
 
@@ -175,7 +175,3 @@ Here are a few links to topics if you wish to learn more about a11y and ARIA.
 2. [aria-labels and relationships by Google Web Fundamentals](<1. https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships>)
 3. [Types of assistive technology by Berkeley Web Access](https://webaccess.berkeley.edu/resources/assistive-technology)
 4. [ARIA by MDN Web Docs (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
-
-
-
-[](https://webaccess.berkeley.edu/resources/assistive-technology)
