@@ -130,7 +130,7 @@ Here’s a quick example:
 
 The above would look like the following, within the accessibility tree:
 
-![](/img/accessibility_tree_chrome_3.png)
+![null](/img/accessibility_tree_chrome_3.png)
 
 **Example 4: An image of the accessibility tree, showing the values provided by the aria-labelledby, using multiple references.**
 
@@ -162,6 +162,6 @@ With that, I hope I gave a clear description on each attribute. Though that bein
 Here are a few links to topics if you wish to learn more about a11y and ARIA.
 
 1. [aria-label does not translate by Adrian Roselli](https://adrianroselli.com/2019/11/aria-label-does-not-translate.html)
-2. [aria-labels and relationships by Google Web Fundamentals](<1. https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships>)
+2. [aria-labels and relationships by Google Web Fundamentals](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships)
 3. [Types of assistive technology by Berkeley Web Access](https://webaccess.berkeley.edu/resources/assistive-technology)
 4. [ARIA by MDN Web Docs (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
