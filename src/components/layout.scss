@@ -496,6 +496,21 @@ body.dark {
     }
   }
 
+  .blogPost__article:hover {
+    background-color: #ececec !important;
+  }
+
+  p > code {
+    background-color: black;
+    color: white;
+    text-shadow: 0 1px black;
+  }
+
+  pre.language-html {
+    border: 1px solid black;
+    box-shadow: 3px 3px 0px black;
+  }
+
   main {
     #banner {
       h2 {
