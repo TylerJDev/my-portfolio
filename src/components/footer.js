@@ -5,9 +5,7 @@ import footerStyles from "./footer.module.scss"
 const Footer = () => (
   <footer className={footerStyles.header}>
         <div className={footerStyles['footerNav_left']}>
-            Made with bread
-            <span aria-hidden="true">&#127838;</span> 
-            by Tyler
+            Made with &#127838; by Tyler
         </div>
         <div>
           Developed with Gatsby, deployed on Netlify

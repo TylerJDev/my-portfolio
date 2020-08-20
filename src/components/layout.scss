@@ -122,6 +122,7 @@ nav {
 
 a.popoutButton {
   border: 1px solid transparent;
+  padding: 10px !important;
   &:hover, &:focus, &:active {
     background-color: black;
     border: 1px solid white;
@@ -282,6 +283,10 @@ main {
     }
   }
 
+  #experienceBio .section__title {
+    margin-bottom: 10%;
+  }
+
   #seeMore {
     width: 90px;
     button {
@@ -329,7 +334,7 @@ main {
   /* /blog */
   #blog_posts {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
     width: 900px;
     > h2 {
       font-family: 'IBM Plex Sans', sans-serif;
@@ -375,9 +380,9 @@ main {
     article.upcoming_post {
       border: none !important;
       box-shadow: none;
-      height: 40px;
-      margin-top: 30px;
-      margin-bottom: 15%;
+      min-height: 40px;
+      margin-top: 0px;
+      margin-bottom: 0%;
       time {
         font-size: 1.2rem;
       }
@@ -715,6 +720,18 @@ body.dark {
 @media (min-width: 605px) {
   #project__container {
     flex-direction: row !important;
+  }
+}
+
+@media (max-width: 605px) {
+  .upcoming_post {
+    height: unset !important;
+  }
+}
+
+@media (max-width: 860px) {
+  article.post__article {
+    height: unset !important;
   }
 }
 
