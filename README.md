@@ -17,7 +17,7 @@ I love building and learning, it's a part of the reason why I'm a web developer.
 3. *How accessible are emojis?*
 
 ## Me Around the Web 🛬
-1. **Website**: [https://trjones.dev/](trjones.dev)
+1. **Website**: [trjones.dev](https://trjones.dev/)
 2. **LinkedIn**: [Tyler Jones](https://www.linkedin.com/in/tyjdev/)
 3. **CodePen**: [TylerJDev](https://codepen.io/TylerJDev)
 
