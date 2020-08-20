@@ -8,8 +8,6 @@ tags:
   - HTML
   - a11y
 ---
-# The difference between aria-label, aria-labelledby and aria-describedby
-
 Often, aria-* attributes can be confusing, and easy to use incorrectly. WebAIM noted that [the majority of home pages where ARIA was present, actually resulted in more accessibility issues.](https://webaim.org/projects/million/#aria)
 
 No ARIA is better than incorrectly used ARIA. If you are not sure about an aria-* attribute, then the [best place to learn about it is from the documentation](https://www.w3.org/TR/wai-aria-1.1/#state_prop_def).
@@ -84,8 +82,6 @@ A user utilizing assistive technology might miss out on that content, as it is r
 
 **An aria-label should always provide equivalent information, to that of which it would provide visually.**
 
-
-
 ## What is an aria-labelledby, and how do you use it?
 
 `aria-labelledby` allows you to provide a label to an element using an ID reference. That ID reference would be from an element which you want to use as a label. 
@@ -138,8 +134,6 @@ The above would look like the following, within the accessibility tree:
 
 **Example 4: An image of the accessibility tree, showing the values provided by the aria-labelledby, using multiple references.**
 
-
-
 ## **What is aria-describedby, and how do you use it?**
 
 `aria-describedby` is very similar to `aria-labelledby`. Both reference other elements using a ID reference in order to gather a text alternative, but aria-describedby is used to “describe” the current element (or elements), rather than just label them.
@@ -159,13 +153,9 @@ Assistive technology might read something along the lines of, "It's all right, A
 
 As with `aria-labelledby`, you can add multiple references, each separated by a space.
 
-
-
 ### Ending Notes
 
 With that, I hope I gave a clear description on each attribute. Though that being said, you should only use these attributes if the situation doesn’t allow for plaintext, or semantic HTML elements.
-
-
 
 ### **Further Reading**
 
