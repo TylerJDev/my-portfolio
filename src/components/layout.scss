@@ -747,6 +747,10 @@ body.dark {
 @media (max-width: 860px) {
   article.post__article {
     height: unset !important;
+    header {
+      max-height: unset !important;
+      height: unset !important;
+    }
   }
 }
 
