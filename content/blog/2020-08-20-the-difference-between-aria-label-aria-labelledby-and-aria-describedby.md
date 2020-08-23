@@ -28,7 +28,7 @@ Here’s an example of what it would look like in markup:
 
 `<button aria-label="Hello, world!">Hi</button>`
 
-![Accessibility tree within Chrome DevTools](/img/accessibility_tree_chrome.png)
+![Chrome DevTools, showcasing accessible name](/img/accessibility_tree_chrome_1.png)
 
 **Example 1: An image of the accessibility tree within Chrome DevTools.**
 
@@ -72,7 +72,7 @@ Here’s an example:
 
 `<button aria-label="Close">Save and Close</button>`
 
-![ ](/img/accessibility_tree_chrome_2.png)
+![Chrome DevTools, showing applied accessible name](/img/accessibility_tree_chrome_1.png)
 
 **Example 2: An image of the accessibility tree, showing the current accessible name, which is "Close".**
 
@@ -107,7 +107,7 @@ This is because aria-labelledby takes precedence over the inner text content of 
 
 Here's what it looks like in the accessibility tree:
 
-![](/img/accessibility_tree_chrome_2.png)
+![Chrome DevTools, using aria-labelledby to show accessible name](/img/accessibility_tree_chrome_2.png)
 
 **Example 3: An image of the accessibility tree, showing the value received from "aria-labelledby". That value being "Tyler".**
 
@@ -130,7 +130,7 @@ Here’s a quick example:
 
 The above would look like the following, within the accessibility tree:
 
-![](/img/accessibility_tree_chrome_3.png)
+![Chrome DevTools, using aria-labelledby to show multiple references applied](/img/accessibility_tree_chrome_3.png)
 
 **Example 4: An image of the accessibility tree, showing the values provided by the aria-labelledby, using multiple references.**
 
@@ -162,6 +162,6 @@ With that, I hope I gave a clear description on each attribute. Though that bein
 Here are a few links to topics if you wish to learn more about a11y and ARIA.
 
 1. [aria-label does not translate by Adrian Roselli](https://adrianroselli.com/2019/11/aria-label-does-not-translate.html)
-2. [aria-labels and relationships by Google Web Fundamentals](<1. https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships>)
+2. [aria-labels and relationships by Google Web Fundamentals](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships)
 3. [Types of assistive technology by Berkeley Web Access](https://webaccess.berkeley.edu/resources/assistive-technology)
 4. [ARIA by MDN Web Docs (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
