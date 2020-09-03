@@ -33,6 +33,7 @@ const AboutPage = () => (
             <a href="mailto:tylerjdev@gmail.com?subject=Inquire%20About">Email</a>
             <a href="https://www.linkedin.com/in/tyjdev/">LinkedIn</a>
             <a href="https://github.com/TylerJDev">Github</a>
+            <a href="https://codepen.io/TylerJDev">CodePen</a>
           </div>
         </div>
     </div>
