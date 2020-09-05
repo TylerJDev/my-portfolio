@@ -18,6 +18,11 @@ const NotFoundPage = ({ data, location }) => {
   )
 }
 
+// Redirect until page is indexed
+if (window.location.pathname === '/2020-08-20-the-difference-between-aria-label-aria-labelledby-and-aria-describedby/') {
+  window.location.replace('/the-difference-between-aria-label-aria-labelledby-and-aria-describedby/');
+}
+
 export default NotFoundPage
 
 export const pageQuery = graphql`
