@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
@@ -11,7 +12,6 @@ collections:
     folder: "content/blog"
     create: true
     slug: "{{slug}}"
-    publish_mode: editorial_workflow
     editor:
      preview: false
     fields:
