@@ -118,3 +118,32 @@ You should always manually test something, espsically for a11y purposes. Perhaps
 3. **Having the same click and keydown event**
 
    I have not seen a case where a click event and keydown should have been different. A keydown event should trigger the same event as would the click event. You should also ensure that a click event is attached, as an element utilizing `role=”button”` should function the same way via click or “enter” and “space”.
+
+## ARIA attributes
+
+**There are a few ARIA attributes you can utilize to make role=”button” even more accessible.**
+
+1. **`aria-pressed`**
+
+   The attribute`aria-pressed` can have the values "true", "false" or "mixed". Utilizing this attribute means that you can make "toggle" buttons which indicate the state of the button. When the value is "true", it means that the button is currently pressed and when the value is "false", it means that the button is not currently pressed. The "mixed" value means that the values of more than one item controlled by the button do not all share the same value. I personally haven't seen aria-pressed="mixed" being used before, and I have not used it myself. 
+
+   [Here's a bit more information about aria-pressed from the specification](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed).
+2. `aria-expanded`
+
+   You may utilize aria-expanded to notify the user that the element, or element it controls is either expanded or collapsed. [This is generally used when making accordions](https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html), where the content is initially hidden and only expanded when activating the trigger. The values supported by `aria-expanded` are "true" or "false".
+
+   [You can learn more from the specification](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded).
+
+
+
+## Further Reading
+
+With that, I hope this article helps you when creating accessible buttons! While it may be easy to use them incorrecetly, it's also easy to use them properly. Always feel free to message me if you have any questions related to the topic, or anything a11y related!
+
+Here's a few posts that I believe will supplement what was discussed in this article.
+
+1. [ARIA: button role - Accessibility | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role)
+2. [Toggle Buttons - Inclusive Components](https://inclusive-components.design/toggle-button/)
+3. [Button Examples | WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html)
+4. [Keyboard Accessibility with the Space Bar](http://www.last-child.com/keyboard-accessibility-with-the-space-bar/)
+5. [What does "focusable" mean? - ally.js](https://allyjs.io/what-is-focusable.html)
