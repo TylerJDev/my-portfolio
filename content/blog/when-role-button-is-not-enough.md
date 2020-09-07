@@ -20,7 +20,7 @@ Before I begin, I would like to say that in **all cases**, utilizing a native `<
 
 ## What is not enough?
 
-When utilizing role=”button”, you need to ensure that the element is tabbable. Though, that is only if the element isn’t already natively tabbable. For example, an anchor element <a> is natively tabbable if there is a valid `href` attribute attached. 
+When utilizing `role=”button”`, you need to ensure that the element is tabbable. Though, that is only if the element isn’t already natively tabbable. For example, an anchor element `<a>` is natively tabbable if there is a valid `href` attribute attached. 
 
 Imagine the following scenario, where a user needs to utilize the search button, but it’s a div:
 
