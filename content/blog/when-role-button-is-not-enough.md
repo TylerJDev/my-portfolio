@@ -1,0 +1,120 @@
+---
+title: When role="button" is not enough
+date: 2020-09-07T18:36:17.247Z
+description: The attribute role="button" is often used in place of a native
+  <button> element, yet this is not enough to ensure the element is actually
+  accessible.
+tags:
+  - ARIA
+  - HTML
+  - a11y
+  - roles
+---
+Whenever I find a website that I particularly like, I open up my browser’s devtools to get an idea on how it was built. Needless to say, I do this *quite a lot*. In some cases, I solely look at the code to get an idea of how accessible a website truly is. One thing that always stands out like a sore thumb is an element with an improper role attribute.
+
+For this post, I will specifically talk about **role=”button”**, and how it may be misused.
+
+Developers tend to use `role=”button”` to turn an element into a "button". This is to indicate to AT users, that the element with the `role="button"` is indeed a button. In many cases this is not enough to make that element accessible.
+
+Before I begin, I would like to say that in **all cases**, utilizing a native <button> element is preferred over `role=”button”`. You should only utilize the role in events where you cannot use a native button element.
+
+## What is not enough?
+
+When utilizing role=”button”, you need to ensure that the element is tabbable. Though, that is only if the element isn’t already natively tabbable. For example, an anchor element <a> is natively tabbable if there is a valid `href` attribute attached. 
+
+Imagine the following scenario, where a user needs to utilize the search button, but it’s a div:
+
+```html
+<!-- Toggles search input on/off -->
+
+<div onclick="openSesame">Search</div>
+
+<!-- This is not at all accessible! -->
+```
+
+**In the example above, the element is not at all accessible to users who utilize AT. We can circumvent that by making it a semantic button.**
+
+Perhaps there’s some sort of constraint where you can’t turn an element into a native button. That’s where `role=”button”` comes in:
+
+```html
+<!-- role attribute takes value as a string -->
+
+  <div role="button" onclick="openSesame">Search</div>
+
+<!-- Is now a "button" in accessibility tree -->
+```
+
+Though we are close, this is still not accessible. An AT user cannot tab, nor focus onto the element, as there is no tabindex. We can fix that by adding a tabindex with the value of "0":
+
+```html
+<!-- tabindex="0" means element is in sequential focus navigation of the page -->
+<div role="button" tabindex="0" onclick="openSesame">Search</div>
+```
+
+It might not be a surprise to hear me say that this still isn’t enough. In some cases, an AT user may now be able to focus and trigger this button, whereas some will still not be able to. 
+
+Some screen readers simulate a "click" when enter is pressed, instead of a keydown event. That means that in the above example, the "onclick" event would actually trigger for *some* AT. Though, for most, it still isn't accessible. This isn't a topic I will dwell on in this post, but this is always good to keep note of.
+
+In a good majority of cases where I see elements which have role=”button”, **two out of three** criteria are met, being `role=”button”` and a `tabindex`. Though they often fall short of having an actual keydown event attached. 
+
+There are also cases where the element which has the role is a natively tabbable element, like an anchor element  `<a>` (if a valid href is attached). In this case, using the “enter” key does work properly, yet you can’t activate an anchor element with the space key, whereas with a `<button>` element, "space" would trigger it as well as "enter".
+
+## How to make it fully accessible
+
+Making an accessible button when a native button cannot be used is pretty simple. This is how in steps.
+
+### Step 1: Add the role
+
+```html
+<!-- Add role="button" to the elem -->
+<div role="button">Hello, I'm now a button!</div>
+```
+
+**This will ensure that the role is announced to an AT user. Without, an AT user may be confused about what type of element it is. It'll be listed as a "button" in the accessibility tree.**
+
+### Step 2: Add a tabindex
+
+```html
+<div role="button" tabindex="0">Hello, I’m a button!</div>
+```
+
+**This ensures that the element is tabbable. It is generally not advisable to set a tabindex value greater than 0.[](https://webaim.org/techniques/keyboard/tabindex) [Here's a good post on why you shouldn't set a positive tabindex.](https://webaim.org/techniques/keyboard/tabindex)**
+
+### Step 3: Add a keydown event
+
+```javascript
+document.querySelector('div[role="button"]').addEventListener('keydown', function(e) {
+	const key = e.key !== undefined ? e.key : e.keyCode; 
+    // e.key && e.keycode have mixed support - keycode is deprecated but support is greater than e.key
+    // I check for e.key first, as it is better than utilizing keycode yet doesn't have the same support across browsers
+  
+	if ( (key === 'Enter' || key === 13) || (key === 'Space' || key === 32)) {
+      // Default behavior is prevented to prevent the page to scroll
+      // when space is pressed 
+      e.preventDefault();
+      this.click();
+    }
+});
+```
+
+**The above ensures that the element triggers the click event (if one is attached). There’s many ways to implement a keydown event, but this is the most simplistic way I could think of.**
+
+### Step 4: Test it
+
+You should always manually test something, espsically for a11y purposes. Perhaps something is blocking the keydown event, or maybe focus isn’t styled properly on this element. You won’t know until you test it out.
+
+## Common gotchas
+
+1. **Anchor elements and role="button"**
+
+   It’s easy to add a role to an element without realizing that more needs to be added to make it functional. I often see anchor elements `<a>` with `role=”button”` attached. This is perfectly fine, but I often see a step missing with ensuring true accessibility of that element.
+
+   An anchor element only triggers with the “enter” key. As stated earlier, a native button element will trigger by both “enter” and “space”.
+
+   To ensure an anchor element with a role of button is accessible, add a separate keydown for the “space” key. This keydown event should trigger the same event that a click, or pressing the “enter” key would.
+2. **Styles and role="button"**
+
+   When utilizing `role=”button”`, sometimes it’s good to style that element as an actual button would appear. This isn’t exactly a requirement, but it aids in ensuring that all users are able to recognize it as a button.
+3. **Having the same click and keydown event**
+
+   I have not seen a case where a click event and keydown should have been different. A keydown event should trigger the same event as would the click event. You should also ensure that a click event is attached, as an element utilizing `role=”button”` should function the same way via click or “enter” and “space”.
