@@ -2,7 +2,7 @@
 title: When role="button" is not enough
 date: 2020-09-07T18:36:17.247Z
 description: The attribute role="button" is often used in place of a native
-  <button> element, yet this is not enough to ensure the element is actually
+  button element, yet this is not enough to ensure the element is actually
   accessible.
 tags:
   - ARIA
