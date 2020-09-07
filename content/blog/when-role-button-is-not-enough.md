@@ -16,7 +16,7 @@ For this post, I will specifically talk about **role=”button”**, and how it 
 
 Developers tend to use `role=”button”` to turn an element into a "button". This is to indicate to AT users, that the element with the `role="button"` is indeed a button. In many cases this is not enough to make that element accessible.
 
-Before I begin, I would like to say that in **all cases**, utilizing a native <button> element is preferred over `role=”button”`. You should only utilize the role in events where you cannot use a native button element.
+Before I begin, I would like to say that in **all cases**, utilizing a native `<button>` element is preferred over `role=”button”`. You should only utilize the role in events where you cannot use a native button element.
 
 ## What is not enough?
 
@@ -78,7 +78,7 @@ Making an accessible button when a native button cannot be used is pretty simple
 <div role="button" tabindex="0">Hello, I’m a button!</div>
 ```
 
-**This ensures that the element is tabbable. It is generally not advisable to set a tabindex value greater than 0.[](https://webaim.org/techniques/keyboard/tabindex) [Here's a good post on why you shouldn't set a positive tabindex.](https://webaim.org/techniques/keyboard/tabindex)**
+**This ensures that the element is tabbable. It is generally not advisable to set a tabindex value greater than 0.**[](https://webaim.org/techniques/keyboard/tabindex)** [Here's a good post on why you shouldn't set a positive tabindex.](https://webaim.org/techniques/keyboard/tabindex)**
 
 ### Step 3: Add a keydown event
 
