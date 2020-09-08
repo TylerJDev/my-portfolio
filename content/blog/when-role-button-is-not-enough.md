@@ -1,7 +1,7 @@
 ---
 title: When role="button" is not enough
 date: 2020-09-07T18:36:17.247Z
-description: The attribute role="button" is often used in place of a native
+description: The attribute role="button" is often used in place of a regular
   button element, yet this is not enough to ensure the element is actually
   accessible.
 tags:
@@ -41,7 +41,7 @@ Perhaps there’s some sort of constraint where you can’t turn an element into
 
   <div role="button" onclick="openSesame">Search</div>
 
-<!-- Is now a "button" in accessibility tree -->
+<!-- is now a "button" in accessibility tree -->
 ```
 
 Though we are close, this is still not accessible. An AT user cannot tab, nor focus onto the element, as there is no tabindex. We can fix that by adding a tabindex with the value of "0":
@@ -70,7 +70,7 @@ Making an accessible button when a native button cannot be used is pretty simple
 <div role="button">Hello, I'm now a button!</div>
 ```
 
-**This will ensure that the role is announced to an AT user. Without, an AT user may be confused about what type of element it is. It'll be listed as a "button" in the accessibility tree.**
+This will ensure that the role is announced to an AT user. Without, an AT user may be confused about what type of element it is. It'll be listed as a "button" in the accessibility tree.
 
 ### Step 2: Add a tabindex
 
@@ -78,7 +78,7 @@ Making an accessible button when a native button cannot be used is pretty simple
 <div role="button" tabindex="0">Hello, I’m a button!</div>
 ```
 
-**This ensures that the element is tabbable. It is generally not advisable to set a tabindex value greater than 0.**[](https://webaim.org/techniques/keyboard/tabindex)** [Here's a good post on why you shouldn't set a positive tabindex.](https://webaim.org/techniques/keyboard/tabindex)**
+This ensures that the element is tabbable. It is generally not advisable to set a tabindex value greater than 0.[](https://webaim.org/techniques/keyboard/tabindex) [Here's a good post on why you shouldn't set a positive tabindex.](https://webaim.org/techniques/keyboard/tabindex)
 
 ### Step 3: Add a keydown event
 
@@ -98,7 +98,7 @@ document.querySelector('div[role="button"]').addEventListener('keydown', functio
 });
 ```
 
-**The above ensures that the element triggers the click event (if one is attached). There’s many ways to implement a keydown event, but this is the most simplistic way I could think of.**
+The above ensures that the element triggers the click event (if one is attached). There’s many ways to implement a keydown event, but this is the most simplistic way I could think of.
 
 ### Step 4: Test it
 
