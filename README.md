@@ -10,11 +10,12 @@ I love building and learning, it's a part of the reason why I'm a web developer.
 
 ## Blog Posts ✍🏽
 - [The difference between aria-label, aria-labelledby and aria-describedby](https://trjones.dev/the-difference-between-aria-label-aria-labelledby-and-aria-describedby/)
+- [When role="button" is not enough](https://trjones.dev/when-role-button-is-not-enough/)
+
 
 ### Upcoming Posts
-1. *Why role="button" is not enough*
-2. *Partial links are inaccessible*
-3. *How accessible are emojis?*
+1. *Partial links are inaccessible*
+2. *How accessible are emojis?*
 
 ## Me Around the Web 🛬
 1. **Website**: [trjones.dev](https://trjones.dev/)
