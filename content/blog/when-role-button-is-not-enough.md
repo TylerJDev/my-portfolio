@@ -16,7 +16,7 @@ For this post, I will specifically talk about **role=”button”**, and how it 
 
 Developers tend to use `role=”button”` to turn an element into a "button". This is to indicate to AT users, that the element with the `role="button"` is indeed a button. In many cases this is not enough to make that element accessible.
 
-Before I begin, I would like to say that in **all cases**, utilizing a native `<button>` element is preferred over `role=”button”`. You should only utilize the role in events where you cannot use a native button element.
+Before I begin, I would like to say that in **all cases**, utilizing a regular `<button>` element is preferred over `role=”button”`. You should only utilize the role in events where you cannot use a native button element.
 
 ## What is not enough?
 
@@ -57,11 +57,11 @@ Some screen readers simulate a "click" when enter is pressed, instead of a keydo
 
 In a good majority of cases where I see elements which have role=”button”, **two out of three** criteria are met, being `role=”button”` and a `tabindex`. Though they often fall short of having an actual keydown event attached. 
 
-There are also cases where the element which has the role is a natively tabbable element, like an anchor element  `<a>` (if a valid href is attached). In this case, using the “enter” key does work properly, yet you can’t activate an anchor element with the space key, whereas with a `<button>` element, "space" would trigger it as well as "enter".
+There are also cases where the element which has the role is a natively tabbable element, like an anchor element  `<a>` (if a valid href is attached). In this case, using the “enter” key does work, yet you can’t activate an anchor element with the space key, whereas with a `<button>` element, both "space" and "enter" would trigger it.
 
 ## How to make it fully accessible
 
-Making an accessible button when a native button cannot be used is pretty simple. This is how in steps.
+Making an accessible button when a native button cannot be used is pretty simple. This is how:
 
 ### Step 1: Add the role
 
@@ -84,16 +84,17 @@ Making an accessible button when a native button cannot be used is pretty simple
 
 ```javascript
 document.querySelector('div[role="button"]').addEventListener('keydown', function(e) {
-	const key = e.key !== undefined ? e.key : e.keyCode; 
-    // e.key && e.keycode have mixed support - keycode is deprecated but support is greater than e.key
-    // I check for e.key first, as it is better than utilizing keycode yet doesn't have the same support across browsers
-  
-	if ( (key === 'Enter' || key === 13) || (key === 'Space' || key === 32)) {
-      // Default behavior is prevented to prevent the page to scroll
-      // when space is pressed 
-      e.preventDefault();
-      this.click();
-    }
+  const key = e.key !== undefined ? e.key : e.keyCode;
+  // e.key && e.keycode have mixed support - keycode is deprecated but support is greater than e.key
+  // I tested within IE11, Firefox, Chrome, Edge (latest) & all had good support for e.key
+
+	if ( (key === 'Enter' || key === 13) || (['Spacebar', ' '].indexOf(key) >= 0 || key === 32)) {
+    // In IE11 and lower, e.key will equal "spacebar" instead of ' '
+
+    // Default behavior is prevented to prevent the page to scroll when "space" is pressed
+    e.preventDefault();
+    this.click();
+  }
 });
 ```
 
@@ -101,7 +102,7 @@ document.querySelector('div[role="button"]').addEventListener('keydown', functio
 
 ### Step 4: Test it
 
-You should always manually test something, espsically for a11y purposes. Perhaps something is blocking the keydown event, or maybe focus isn’t styled properly on this element. You won’t know until you test it out.
+You should always manually test something, especially for a11y purposes. Perhaps something is blocking the keydown event, or maybe focus isn’t styled properly on this element. You won’t know until you test it out.
 
 ## Common gotchas
 
@@ -125,20 +126,18 @@ You should always manually test something, espsically for a11y purposes. Perhaps
 
 1. **`aria-pressed`**
 
-   The attribute`aria-pressed` can have the values "true", "false" or "mixed". Utilizing this attribute means that you can make "toggle" buttons which indicate the state of the button. When the value is "true", it means that the button is currently pressed and when the value is "false", it means that the button is not currently pressed. The "mixed" value means that the values of more than one item controlled by the button do not all share the same value. I personally haven't seen aria-pressed="mixed" being used before, and I have not used it myself. 
+   Attribute `aria-pressed` can have the values "**true**", "**false**" or "**mixed**". Utilizing this attribute means that you can make "toggle" buttons which indicate the state of the button. When the value is "true", it means that the button is currently pressed and when the value is "false", it means that the button is not currently pressed. The "mixed" value means that the values of more than one item controlled by the button do not all share the same value. *I personally haven't seen aria-pressed="mixed" being used before, and I have not used it myself.* 
 
    [Here's a bit more information about aria-pressed from the specification](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed).
 2. `aria-expanded`
 
-   You may utilize aria-expanded to notify the user that the element, or element it controls is either expanded or collapsed. [This is generally used when making accordions](https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html), where the content is initially hidden and only expanded when activating the trigger. The values supported by `aria-expanded` are "true" or "false".
+   You may utilize aria-expanded to notify the user that the element, or element it controls is either expanded or collapsed. [This is generally used when making accordions](https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html), where the content is initially hidden and only expanded when activating the trigger. The values supported by `aria-expanded` are "**true**" or "**false**".
 
    [You can learn more from the specification](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded).
 
-
-
 ## Further Reading
 
-With that, I hope this article helps you when creating accessible buttons! While it may be easy to use them incorrecetly, it's also easy to use them properly. Always feel free to message me if you have any questions related to the topic, or anything a11y related!
+With that, I hope this article helps you when creating accessible buttons! While it may be easy to use them incorrectly, it's also easy to use them properly. Always feel free to message me if you have any questions related to the topic, or anything a11y related!
 
 Here's a few posts that I believe will supplement what was discussed in this article.
 
