@@ -39,7 +39,7 @@ Perhaps there’s some sort of constraint where you can’t turn an element into
 ```html
 <!-- role attribute takes value as a string -->
 
-  <div role="button" onclick="openSesame">Search</div>
+<div role="button" onclick="openSesame">Search</div>
 
 <!-- is now a "button" in accessibility tree -->
 ```
@@ -67,6 +67,7 @@ Making an accessible button when a native button cannot be used is pretty simple
 
 ```html
 <!-- Add role="button" to the elem -->
+
 <div role="button">Hello, I'm now a button!</div>
 ```
 
@@ -124,7 +125,7 @@ You should always manually test something, especially for a11y purposes. Perhaps
 
 **There are a few ARIA attributes you can utilize to make role=”button” even more accessible.**
 
-1. **`aria-pressed`**
+1. `aria-pressed`
 
    Attribute `aria-pressed` can have the values "**true**", "**false**" or "**mixed**". Utilizing this attribute means that you can make "toggle" buttons which indicate the state of the button. When the value is "true", it means that the button is currently pressed and when the value is "false", it means that the button is not currently pressed. The "mixed" value means that the values of more than one item controlled by the button do not all share the same value. *I personally haven't seen aria-pressed="mixed" being used before, and I have not used it myself.* 
 
