@@ -39,7 +39,7 @@ Perhaps there’s some sort of constraint where you can’t turn an element into
 ```html
 <!-- role attribute takes value as a string -->
 
-  <div role="button" onclick="openSesame">Search</div>
+<div role="button" onclick="openSesame">Search</div>
 
 <!-- is now a "button" in accessibility tree -->
 ```
@@ -67,6 +67,7 @@ Making an accessible button when a native button cannot be used is pretty simple
 
 ```html
 <!-- Add role="button" to the elem -->
+
 <div role="button">Hello, I'm now a button!</div>
 ```
 
