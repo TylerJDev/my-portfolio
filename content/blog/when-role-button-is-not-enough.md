@@ -90,7 +90,7 @@ document.querySelector('div[role="button"]').addEventListener('keydown', functio
   // I tested within IE11, Firefox, Chrome, Edge (latest) & all had good support for e.key
 
 	if ( (key === 'Enter' || key === 13) || (['Spacebar', ' '].indexOf(key) >= 0 || key === 32)) {
-    // In IE11 and lower, e.key will equal "spacebar" instead of ' '
+    // In IE11 and lower, e.key will equal "Spacebar" instead of ' '
 
     // Default behavior is prevented to prevent the page to scroll when "space" is pressed
     e.preventDefault();
