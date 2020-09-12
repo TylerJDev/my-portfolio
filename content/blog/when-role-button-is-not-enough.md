@@ -79,7 +79,7 @@ This will ensure that the role is announced to an AT user. Without, an AT user m
 <div role="button" tabindex="0">Hello, I’m a button!</div>
 ```
 
-This ensures that the element is tabbable. It is generally not advisable to set a tabindex value greater than 0.[](https://webaim.org/techniques/keyboard/tabindex) [Here's a good post on why you shouldn't set a positive tabindex.](https://webaim.org/techniques/keyboard/tabindex)
+This ensures that the element is tabbable. It is generally not advisable to set a tabindex value greater than 0. [Here's a good post on why you shouldn't set a positive tabindex.](https://webaim.org/techniques/keyboard/tabindex)
 
 ### Step 3: Add a keydown event
 
