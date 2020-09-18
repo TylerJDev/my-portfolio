@@ -113,25 +113,26 @@ If you're a windows user you should have Narrator installed, [which is a screen 
 
 ## Common gotchas
 
-1. **Anchor elements and role="button"**
-   It’s easy to add a role to an element without realizing that more needs to be added to make it fully functional. I often see anchor elements `<a>` with `role="button"` attached. This is perfectly fine, but I often see a step missing with ensuring true accessibility of that element.
-An anchor element only triggers with the **"enter"** key, whereas a native button element will trigger by both **"enter"** and **"space"**.
-To ensure an anchor element with a role of button is accessible, add a separate keydown for the **"space"** key. This keydown event should trigger the same event that a click, or pressing the **“enter”** key would.
-2. **Styles and role="button"**
+1. **Anchor elements and role="button"**   
+
+   It’s easy to add a role to an element without realizing that more needs to be added to make it fully functional. I often see anchor elements `<a>` with `role="button"` attached. This is perfectly fine, but I often see a step missing with ensuring true accessibility of that element. An anchor element only triggers with the **"enter"** key, whereas a native button element will trigger by both **"enter"** and **"space"**. To ensure an anchor element with a role of button is accessible, add a separate keydown for the **"space"** key. This keydown event should trigger the same event that a click, or pressing the **“enter”** key would.
+2. **Styles and role="button"** 
+
    When utilizing `role="button"`, sometimes it’s good to style that element as an actual button would appear. This isn’t exactly a requirement, but it'll ensure that users are able to recognize it as a button.
-3. **Not having the same click and keydown event**
-A keydown event should trigger the same event as the click event. You should also ensure that a click event is attached and that the element utilizing `role="button"` should function the same way for click, "enter" or "space".
+3. **Not having the same click and keydown event** 
+
+   A keydown event should trigger the same event as the click event. You should also ensure that a click event is attached and that the element utilizing `role="button"` should function the same way for click, "enter" or "space".
 
 ## ARIA attributes
 
 **There are a few ARIA attributes you can utilize to make role="button" even more accessible.**
 
-1. `aria-pressed`
-   Attribute `aria-pressed` can have the values "**true**", "**false**" or "**mixed**". Utilizing this attribute means that you can make a "toggle" button, which indicates the state of the button. When the value is "true", it means that the button is currently pressed and when the value is "false", it means that the button is not currently pressed. The "mixed" value means that the values of more than one item controlled by the button do not all share the same value. *I personally haven't seen aria-pressed="mixed" being used before, and I have not used it myself.* 
-[Here's a bit more information about aria-pressed from the specification](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed).
-2. `aria-expanded`
-   You may utilize aria-expanded to notify the user that the element, or element it controls is either expanded or collapsed. [This is generally used when making accordions](https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html), where the content is initially hidden and only expanded when activating the trigger. The values supported by `aria-expanded` are "**true**" or "**false**".
-[You can learn more from the specification](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded).
+1. `aria-pressed`    
+
+   Attribute `aria-pressed` can have the values "**true**", "**false**" or "**mixed**". Utilizing this attribute means that you can make a "toggle" button, which indicates the state of the button. When the value is "true", it means that the button is currently pressed and when the value is "false", it means that the button is not currently pressed. The "mixed" value means that the values of more than one item controlled by the button do not all share the same value. *I personally haven't seen aria-pressed="mixed" being used before, and I have not used it myself.*  [Here's a bit more information about aria-pressed from the specification](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed).
+2. `aria-expanded`    
+
+   You may utilize aria-expanded to notify the user that the element, or element it controls is either expanded or collapsed. [This is generally used when making accordions](https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html), where the content is initially hidden and only expanded when activating the trigger. The values supported by `aria-expanded` are "**true**" or "**false**". [You can learn more from the specification](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded).
 
 ## Further Reading
 
