@@ -34,6 +34,7 @@ const AboutPage = () => (
             <a href="https://www.linkedin.com/in/tyjdev/">LinkedIn</a>
             <a href="https://github.com/TylerJDev">Github</a>
             <a href="https://codepen.io/TylerJDev">CodePen</a>
+            <a href="https://dev.to/tylerjdev">DEV</a>
           </div>
         </div>
     </div>
