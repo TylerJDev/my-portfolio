@@ -27,6 +27,10 @@ While that may be okay for some, a user who uses some form of assistive technolo
 
 This is because some users may navigate a page through links. Maybe they’re trying to find a link that they’ve been to before, or some other scenario. When using a screen reader, you can navigate between landmarks, form elements, links, etc. When navigating through links, the example above would be listed as "here", without the context that precedes it.
 
+![NVDA Elements List, Links view](/img/nvda.png "Example of the \"Links\" view in NVDA Elements List.")
+
+
+
 This is also listed as a success criteria for WCAG 2.1, that criteria being [Link Purpose 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html).
 
 It’s also good to note that you do not have to be super specific when creating a link. It’s better to give the link a short amount of context to describe that link, so that an AT user, (or any user) can perceive that link quicker.
@@ -38,9 +42,10 @@ Here’s a few things we can do to ensure that we’re meeting WCAG criteria 2.4
 1. **Ensure that the link text describes its purpose**
 
    For example, if your link contains “here”, or “read”, or even “click me!”, then it doesn’t describe the purpose of the link; what exactly am I clicking? Ensure that the link describes where the link will take the user, an example of short and efficient text content being: “About us”, “More information on our product”, “Our values”.
-2.  **Ensure that the link has a proper accessible name**
+2. **Ensure that the link has a proper accessible name**
 
    Some links are inaccessible because they don’t contain any accessible text at all. For example, if your link contains only an image without a descriptive alt text, or text alternative, then a user using assistive technology may not be able to figure out where that link will take them.
+
 3. **Reduce redundancy**
 
    Some links are inaccessible because they don’t contain any accessible text at all. For example, if your link contains only an image without a descriptive alt text, or text alternative, then a user using assistive technology may not be able to figure out where that link will take them.
@@ -54,6 +59,6 @@ Giving links better context helps us all, as some users may be able to better di
 With that, I hope I helped you learn something new regarding accessibility! Here’s a few links that I think may supplement this post.
 
 1. [Links and Hypertext by WebAIM](https://webaim.org/techniques/hypertext/)
-2. [Understanding success criterion 2.4.4: Link Purpose (In Context) \[W3]](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
+2. \[Understanding success criterion 2.4.4: Link Purpose (In Context) [W3]](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
 3. [Using Meaningful Link Text by University of Washington](https://www.washington.edu/accessibility/links/)
-4. [Failures of Success Criterion 2.4.4 \[W3]](https://www.w3.org/WAI/WCAG21/Techniques/failures/F63)
+4. \[Failures of Success Criterion 2.4.4 [W3]](https://www.w3.org/WAI/WCAG21/Techniques/failures/F63)
