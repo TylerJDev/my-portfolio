@@ -27,9 +27,9 @@ While that may be okay for some, a user who uses some form of assistive technolo
 
 This is because some users may navigate a page through links. Maybe they’re trying to find a link that they’ve been to before, or some other scenario. When using a screen reader, you can navigate between landmarks, form elements, links, etc. When navigating through links, the example above would be listed as "here", without the context that precedes it.
 
-![NVDA Elements List, Links view](/img/nvda.png "Example of the \"Links\" view in NVDA Elements List.")
+![NVDA Elements List, Links view](/img/nvda.png)
 
-
+*Example of the "Links" view in [NVDA Screen Reader](https://www.nvaccess.org/) Elements List.*
 
 This is also listed as a success criteria for WCAG 2.1, that criteria being [Link Purpose 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html).
 
