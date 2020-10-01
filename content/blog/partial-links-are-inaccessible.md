@@ -16,7 +16,7 @@ A quick example of a partial link would be the following:
 <p><a href="/abt">here</a></p>
 ```
 
-In the example above, you wouldn’t be able to tell where the link would direct you, as there’s no “proper” context describing it. For some, there’s usually context before or after the link, so that they can make a informed decision of clicking that link or not:
+In the example above, you wouldn’t be able to tell where the link would direct you to, as there’s no “proper” context describing it. For some, there’s usually context before or after the link, so that they can make a informed decision of clicking that link or not:
 
 ```html
 <p>See more on our about page <a href="/about">here</a>!</p>
@@ -41,14 +41,14 @@ Here’s a few things we can do to ensure that we’re meeting WCAG criteria 2.4
 
 1. **Ensure that the link text describes its purpose**
 
-   For example, if your link contains “here”, or “read”, or even “click me!”, then it doesn’t describe the purpose of the link; what exactly am I clicking? Ensure that the link describes where the link will take the user, an example of short and efficient text content being: “About us”, “More information on our product”, “Our values”.
+   For example, if your link contains “here”, or “read”, or even “click me!”, then it doesn’t describe the purpose of the link; what exactly am I clicking? Ensure that the link describes where the link will take the user, an example of short and efficient text content being: “**About us**”, “**More information on our product**”, “**Our values**”.
 2. **Ensure that the link has a proper accessible name**
 
-   Some links are inaccessible because they don’t contain any accessible text at all. For example, if your link contains only an image without a descriptive alt text, or text alternative, then a user using assistive technology may not be able to figure out where that link will take them.
+   Some links are inaccessible because they don’t contain any accessible text at all. An example being, if your link contains only an image without a descriptive alt text, or text alternative, then a user using assistive technology may not be able to figure out where that link will take them.
 
 3. **Reduce redundancy**
 
-   Some links are inaccessible because they don’t contain any accessible text at all. For example, if your link contains only an image without a descriptive alt text, or text alternative, then a user using assistive technology may not be able to figure out where that link will take them.
+   Some links are inaccessible because they don’t contain any accessible text at all. A quick example being if your link contains only an image without a descriptive alt text, or text alternative, then a user using assistive technology may not be able to figure out where that link will take them.
 
 In most cases, partial links are caused by only factoring the visual aspect of that link. For example, if you only give the context "here", you’re assuming that the user is going through the navigational flow in order to receive the context for it. Though, this is disregarding the fact that users may navigate through links, missing out on that additional context.
 
@@ -59,6 +59,6 @@ Giving links better context helps us all, as some users may be able to better di
 With that, I hope I helped you learn something new regarding accessibility! Here’s a few links that I think may supplement this post.
 
 1. [Links and Hypertext by WebAIM](https://webaim.org/techniques/hypertext/)
-2. \[Understanding success criterion 2.4.4: Link Purpose (In Context) [W3]](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
+2. [Understanding success criterion 2.4.4: Link Purpose (In Context)](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
 3. [Using Meaningful Link Text by University of Washington](https://www.washington.edu/accessibility/links/)
-4. \[Failures of Success Criterion 2.4.4 [W3]](https://www.w3.org/WAI/WCAG21/Techniques/failures/F63)
+4. [Failures of Success Criterion 2.4.4](<1. https://www.w3.org/WAI/WCAG21/Techniques/failures/F63>)
