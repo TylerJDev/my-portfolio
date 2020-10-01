@@ -1,7 +1,8 @@
 ---
 title: Partial links are inaccessible
 date: 2020-09-30T22:31:27.674Z
-description: Partial links are inaccessible across the web, so why are they so common?
+description: It's easy to create links which aren't quite accessible due to lack
+  of context, though it's even easier to fix.
 tags:
   - ARIA
   - HTML
