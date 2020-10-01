@@ -1,9 +1,4 @@
 [
-  {
-      "name": "Partial links are inaccessible",
-      "description": "Partial links are inaccessible across the web, so why are they so common?",
-      "expected": "2020-09"
-    },
     {
       "name": "How accessible are emojis?",
       "description": "Emojis are unavoidable. Let's see how accessible they truly are on the web.",
