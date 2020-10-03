@@ -32,13 +32,13 @@ This is because some users may navigate a page through links. Maybe they’re tr
 
 *Example of the "Links" view in [NVDA Screen Reader](https://www.nvaccess.org/) Elements List.*
 
-This is also listed as a success criteria for WCAG 2.1, that criteria being [Link Purpose 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html).
+This is also listed as a success criterion for WCAG 2.1, that criterion being [Link Purpose 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html).
 
 It’s also good to note that you do not have to be super specific when creating a link. It’s better to give the link a short amount of context to describe that link, so that an AT user, (or any user) can perceive that link quicker.
 
 ## How to make it accessible
 
-Here’s a few things we can do to ensure that we’re meeting WCAG criteria 2.4.4.
+Here’s a few things we can do to ensure that we’re meeting WCAG criterion 2.4.4.
 
 1. **Ensure that the link text describes its purpose**
 
@@ -46,10 +46,6 @@ Here’s a few things we can do to ensure that we’re meeting WCAG criteria 2.4
 2. **Ensure that the link has a proper accessible name**
 
    Some links are inaccessible because they don’t contain any accessible text at all. An example being, if your link contains only an image without a descriptive alt text, or text alternative, then a user using assistive technology may not be able to figure out where that link will take them.
-
-3. **Reduce redundancy**
-
-   Some links are inaccessible because they don’t contain any accessible text at all. A quick example being if your link contains only an image without a descriptive alt text, or text alternative, then a user using assistive technology may not be able to figure out where that link will take them.
 
 In most cases, partial links are caused by only factoring the visual aspect of that link. For example, if you only give the context "here", you’re assuming that the user is going through the navigational flow in order to receive the context for it. Though, this is disregarding the fact that users may navigate through links, missing out on that additional context.
 
