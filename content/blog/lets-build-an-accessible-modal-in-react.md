@@ -60,7 +60,6 @@ const A11yModal = () => {
 };
  
 export default A11yModal;
-
 ```
 
 Awesome, we’ve created our functional component, and exported it. We’ll want to import it within our `App.js` file, which is directly within our `src/` folder.
@@ -73,3 +72,5 @@ import React, {useState, useRef} from 'react';
 ```
 
 **(Make note of what to delete within App.js, also show full code within App.js at start of build)**
+
+## Creating the modal dialog
