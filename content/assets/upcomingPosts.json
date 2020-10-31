@@ -2,11 +2,11 @@
     {
       "name": "How accessible are emojis?",
       "description": "Emojis are unavoidable. Let's see how accessible they truly are on the web.",
-      "expected": "2020-10"
+      "expected": "2020-11"
     },
     {
       "name": "Let's build an accessible modal in React!",
       "description": "Often, I see modals which are clearly inaccessible from the get go. So how about we make our own!",
-      "expected": "2020-10"
+      "expected": "2020-11"
     }
 ]
