@@ -77,4 +77,74 @@ import React, {useState, useRef} from 'react';
 
 **(Make note of what to delete within App.js, also show full code within App.js at start of build)**
 
+While we're within App.js, we should go ahead and remove most of the code within and start fresh. We'll want to remove the code within the `<div className="App">` inside of the `App` component. Your `App.js` should now look like this:
+
+```javascript
+/* App.js */
+import './App.css';
+import A11yModal from './components/Modal';
+import React, {useState, useRef} from 'react';
+
+function App() {
+  return (
+    <div className="App">
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+We should be able to now make the modal dialog itself.
+
 ## Creating the modal dialog
+
+Inside of your App component, let's utilize our A11yModal component that we imported earlier:
+
+```javascript
+/* App.js */
+function App() {
+  return (
+    <div className="App">
+      <A11yModal />
+    </div>
+  );
+}
+```
+
+We should now see a heading with the text "Hello, world!" on our page, great! Let's go back into our `Modal.js` file and create the modal dialog. 
+
+When creating a modal dialog, we need to ensure the following things:
+
+1. It contains a way to exit the modal.
+2. The content outside or behind the modal is inert, meaning that users can't interact with the content behind the modal.
+3. Focus is trapped within that modal when it is present on the page.
+
+These are a few steps I go through when ensuring that a modal is both usable and accessible. There are a few steps in between, but that depends on the scope of the modal.
+
+Within your App.js, remove the `<h1>Hello, world!</h1>` element, and start the modal by creating a `<div>` with the class of `.modal-container`. Within `.modal-container`, we'll create a few more elements.
+
+```javascript
+const A11yModal = () => {
+    return (
+      <div className="modal-container">
+        <div className="modal-backdrop"></div>
+      
+        <div id="modal">
+          <div className="modal-close-container"></div>
+      
+          <div className="modal-header">
+            <div className="modal-headings"></div>
+          </div>
+      
+          <div className="modal-main"></div>
+        </div>
+      </div>
+    )
+};
+```
+
+We should now have a basic skeleton of how our modal will be formatted. We're using `.modal-backdrop` as the "overlay" behind the modal that'll have some opacity to it. This is separate from the modal itself, but we want to keep it retained within our `.modal-container`. Our `.modal-close-container` will contain our close button for the modal, whereas `.modal-header > .modal-headings` will keep our headings for the modal. Last but not least, our `.modal-main` element will contain all of the other content.
+
+Let's start off by adding onto our modal, first we'll create a close button within `.modal-close-container`.
