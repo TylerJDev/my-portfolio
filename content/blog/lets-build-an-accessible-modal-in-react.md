@@ -147,4 +147,12 @@ const A11yModal = () => {
 
 We should now have a basic skeleton of how our modal will be formatted. We're using `.modal-backdrop` as the "overlay" behind the modal that'll have some opacity to it. This is separate from the modal itself, but we want to keep it retained within our `.modal-container`. Our `.modal-close-container` will contain our close button for the modal, whereas `.modal-header > .modal-headings` will keep our headings for the modal. Last but not least, our `.modal-main` element will contain all of the other content.
 
-Let's start off by adding onto our modal, first we'll create a close button within `.modal-close-container`.
+Let's start off by adding onto our modal, first we'll create a close button within `.modal-close-container`. 
+
+```javascript
+<div className="modal-close-container">
+  <button id="modal-close">Close</button>
+</div>
+```
+
+Right now our button doesn't do anything, but we'll add some functionality later.
