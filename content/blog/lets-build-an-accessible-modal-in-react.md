@@ -102,7 +102,7 @@ We should be able to now make the modal dialog itself.
 
 Inside of your App component, let's utilize our A11yModal component that we imported earlier:
 
-```javascript
+```jsx
 /* App.js */
 function App() {
   return (
@@ -125,7 +125,7 @@ These are a few steps I go through when ensuring that a modal is both usable and
 
 Within your App.js, remove the `<h1>Hello, world!</h1>` element, and start the modal by creating a `<div>` with the class of `.modal-container`. Within `.modal-container`, we'll create a few more elements.
 
-```javascript
+```jsx
 const A11yModal = () => {
     return (
       <div className="modal-container">
@@ -149,7 +149,7 @@ We should now have a basic skeleton of how our modal will be formatted. We're us
 
 Let's start off by adding onto our modal, first we'll create a close button within `.modal-close-container`. 
 
-```javascript
+```jsx
 <div className="modal-close-container">
   <button id="modal-close">Close</button>
 </div>
