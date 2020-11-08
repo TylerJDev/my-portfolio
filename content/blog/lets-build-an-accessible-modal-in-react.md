@@ -26,7 +26,11 @@ So let's start by running the following command in your terminal. (Add Yarn Supp
 
 This should take a minute or two to create the directory and generate the initial project structure as well as install the dependencies it needs.
 
-Once that has finished, we'll need to go within that directory and start our server, we can do this by using;
+Once that has finished, we'll need to go within that directory: 
+
+`cd a11y-modal`
+
+We'll then need to start our server, we can do this by using:
 
 `npm run start`
 
