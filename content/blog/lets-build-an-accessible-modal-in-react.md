@@ -155,4 +155,6 @@ Let's start off by adding onto our modal, first we'll create a close button with
 </div>
 ```
 
-Right now our button doesn't do anything, but we'll add some functionality later.
+Right now our button doesn't do anything, but we'll add some functionality later. 
+
+Let's now add some headings that will describe the modal's purpose. Inside of `.modal-headings`, we'll create an `<h2>` which will be our main modal title.
