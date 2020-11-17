@@ -7,21 +7,23 @@ const Experience = () => (
     <div className={experienceStyles.container}>
       <h3>Web Application Developer @ AudioEye</h3>
       <h4>September 2018 - Present</h4>
-      <p>Responsible for developing, testing, implementing, and maintaining JavaScript based fixes for issues of accessibility that exist on client websites.
+      <p>AudioEye is the industry-leading digital accessibility software solution provider, delivering web accessibility compliance to start-ups and Fortune 500 companies.</p>
+      <p>I was responsible for developing, testing, implementing, and maintaining JavaScript-based fixes for issues of accessibility that existed on client websites.</p>
         <ul className={experienceStyles.expList}>
-          <li>Applied WAI-ARIA authoring guidelines and best practices to client websites to ensure WCAG 2.1 AA requirements.</li>
-          <li>Implemented custom accessible technology solutions for varying client websites.</li>
+          <li>Applied Web Content Accessibility Guidelines (WCAG) and WAI-ARIA best practices to client websites to ensure WCAG 2.1 requirements.</li>
+          <li>Implemented a multitude of accessible technology solutions for varying client websites.</li>
+          <li>Led multiple fortune 500 client projects and delivered feedback directly to stakeholders.</li>
           <li>Responsible for ensuring multiple fortune 500 websites meet ADA compliance.</li>
-          <li>Collaborated with the team to produce internal accessibility guidelines when remediating client websites.</li>
-          <li>Utilized JavaScript to implement remediations on client websites and ensure backwards compatibility with IE11.</li>
+          <li>Took initiative in creating more internal documentation for engineering teams and onboarding.</li>
+          <li>Deployed performant JavaScript to websites which receive millions of users monthly, (50M+ users/monthly).</li>
+          <li>Conducted daily code reviews to ensure consistency and that bugs don’t reach production.</li>
         </ul>
-    </p>
     </div>
     <div className={experienceStyles.container}>
       <h3>Certified Professional in Accessibility Core Competencies (CPACC)</h3>
       <h4>Issued December 2018</h4>
       <p>Certified Professional in Accessibility Core Competencies (CPACC).
-      Issuing authority IAAP - International Association of Accessibility Professionals.</p>
+      Issuing authority <strong>IAAP - International Association of Accessibility Professionals.</strong></p>
     </div>
   </div>
 )
