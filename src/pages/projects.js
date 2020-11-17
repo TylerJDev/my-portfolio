@@ -52,7 +52,7 @@ class ProjectsPage extends Component {
               <div className="section__title">
                   <h2>Experience</h2>
                   <h3>All the EXP I've gained so far.</h3>
-                  <a href="pdf/my_trjones__resume_n.pdf" target="_blank" className="popoutButton">View my resume <span className="hidden_text">- Opens PDF in new window</span></a>
+                  <a href="pdf/my_trjones__resume_n.pdf" target="_blank" className="popoutButton hiddenBtn">View my resume <span className="hidden_text">- Opens PDF in new window</span></a>
                 </div>
                 <Experience/>
                 

@@ -40,9 +40,9 @@ class Header extends Component {
           </div>  
 
           <div className={headerStyles.navi_right + ' header__right_container'}>
-            <Link to="/projects">Projects</Link>
-            <Link to="/about">About</Link>
-            <Link to="/blog">Blog</Link>
+            <Link to="/projects" className="mainNavLinks">Projects</Link>
+            <Link to="/about" className="mainNavLinks">About</Link>
+            <Link to="/blog" className="mainNavLinks">Blog</Link>
             <button onClick={this.darkMode} id="darkLight_switch" className={typeof window !== 'undefined' && document.body.classList.contains('dark') ? 'dark' : 'light'}>{typeof window !== 'undefined' && document.body.classList.contains('dark') === true ? 'Light Mode' : 'Dark Mode'}</button>
           </div>
         </nav>
