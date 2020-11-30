@@ -12,7 +12,7 @@ const Experience = () => (
         <ul className={experienceStyles.expList}>
           <li>Applied Web Content Accessibility Guidelines (WCAG) and WAI-ARIA best practices to client websites to ensure WCAG 2.1 requirements.</li>
           <li>Implemented a multitude of accessible technology solutions for varying client websites.</li>
-          <li>Led multiple fortune 500 client projects and delivered feedback directly to stakeholders.</li>
+          <li>Led multiple Fortune 500 client projects and delivered feedback directly to stakeholders.</li>
           <li>Responsible for ensuring multiple fortune 500 websites meet ADA compliance.</li>
           <li>Took initiative in creating more internal documentation for engineering teams and onboarding.</li>
           <li>Deployed performant JavaScript to websites which receive millions of users monthly, (50M+ users/monthly).</li>

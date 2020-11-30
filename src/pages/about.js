@@ -22,7 +22,6 @@ const AboutPage = () => (
             I firmly believe that the web should be accessible to all.
             <br/>
             <br/>
-            I currently reside in <strong>Atlanta, Georgia</strong>.
           </p>
         </div>
 
