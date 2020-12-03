@@ -12,7 +12,7 @@ const Experience = () => (
         <ul className={experienceStyles.expList}>
           <li>Provided Manual QA as an Accessibility SME for new projects to ensure that WCAG acceptance criteria were met.</li>
           <li>Took initiative in creating more documentation for engineering and future test automation.</li>
-          <li>Performed regression testing to ensure both existing and new solutions were meeting engineering goals.</li>
+          <li>Conducts regression testing to ensure both existing and new solutions were meeting engineering goals and metrics.</li>
           <li>Designed manual tests and plans for future automation of testing utilizing CI/CD pipeline.</li>
           <li>Helped guide the QA team with bridging the gap between engineering and QA.</li>
           <li>Provided and created accessibility test cases for new features before they hit release.</li>
