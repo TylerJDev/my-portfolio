@@ -1,15 +1,15 @@
 [
     {
+      "name": "DJ-With-Friends",
+      "description": "A way to listen to Spotify with friends!",
+      "builtWith": ["Vue", "SCSS/SASS", "Node.js", "Express.js", "Jest", "Cypress"],
+      "linkTo": "https://djwithfriends.com/"
+    },  
+    {
       "name": "YouTube-Timestamps",
       "description": "YouTube Timestamps is a plugin to track timestamps on any video which contains them.",
       "builtWith": ["JavaScript", "CSS", "HTML", "Chrome Extension"],
       "linkTo": "https://github.com/TylerJDev/YouTube-Timestamps"
-    },
-    {
-      "name": "DJ-With-Friends",
-      "description": "A way to listen to Spotify with friends!",
-      "builtWith": ["Vue", "SCSS/SASS", "Node.js", "Express.js", "Jest"],
-      "linkTo": "https://djwithfriends.com/"
     },
     {
       "name": "My Portfolio",

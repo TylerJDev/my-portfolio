@@ -13,6 +13,7 @@ $bg--shadow: 4px 4px 0px black;
         max-width: 900px;
         p {
             @include monty-python;
+            margin-bottom: 15px;
         }
     }
 
@@ -26,5 +27,6 @@ $bg--shadow: 4px 4px 0px black;
         margin-top: 20px;
         margin-left: 50px;
         font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
     }
 }
