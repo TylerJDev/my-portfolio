@@ -6,7 +6,7 @@ const Experience = () => (
   <div className={experienceStyles.exp}>
     <div className={experienceStyles.container}>
     <h3>Software Development Engineer In Test (SDET) @ AudioEye</h3>
-      <h4>September 2020 - Present</h4>
+      <h4>September 2020 - January 2021</h4>
       <p>AudioEye is the industry-leading digital accessibility software solution provider, delivering web accessibility compliance to start-ups and Fortune 500 companies.</p>
       <p>I was responsible for testing, automation of existing processes, being an A11y SME, aiding with Manual QA testing, and creating test cases.</p>
         <ul className={experienceStyles.expList}>
