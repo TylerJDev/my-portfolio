@@ -14,11 +14,11 @@ const AboutPage = () => (
         </div>
 
         <div id="aboutMe">
-          <p>Hello there! My name is Tyler! Professionally I'm a web developer and I love crafting up new solutions.
-            I enjoy learning, which with web development the limit is the moon.
+          <p>Hello there! My name is Tyler! I'm a developer and I love crafting up new solutions.
             <br/>
-            <br/>
-            I also enjoy making things accessible. Unfortunately, a large part of the web is inaccessible in some shape or form. I try my best to create the most accessible products possible.
+            I also enjoy working towards accessibility. 
+            Unfortunately, a large part of the web is inaccessible in some shape or form. 
+            I try my best to create the most accessible applications possible.
             I firmly believe that the web should be accessible to all.
             <br/>
             <br/>

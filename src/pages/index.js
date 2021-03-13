@@ -12,8 +12,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div id="banner" className="container">
       <h1>Hello, my name is Tyler</h1>
-      <h2>Hi there! I'm a web developer, with a knack for building!<br/>
-      I specialize in <strong>Front-End Development</strong>, <strong>Accessibility</strong> and <strong>Test Driven Development.</strong></h2>
+      <h2>Hi there! I'm a Frontend Engineer, with a knack for building!<br/>
+      I specialize in <strong>Frontend Development</strong>, <strong>Accessibility</strong> and <strong>Test Driven Development.</strong></h2>
 
       <div id="banner__bg">
         <div id="banner_moon"></div>

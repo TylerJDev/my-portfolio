@@ -1,8 +1,8 @@
 # Hello Friend, my name is Tyler! 🌇
-I'm a Web Developer, I specialize mostly in the front-end & making accessible applications.
+I'm a Frontend Engineer, I specialize mostly in the frontend & making accessible applications.
 
 ## About Me 📖
-I love building and learning, it's a part of the reason why I'm a web developer. With the vastness that is web development, I enjoy trying out new things which may improve my workflow, or to get a better perspective. Things like making sure something is accessible for all is always key when I'm building for the web.
+I love building and learning, it's a part of the reason why I'm a developer. With the vastness that is web development, I enjoy trying out new things which may improve my workflow, or to get a better perspective. Things like making sure something is accessible for all is always key when I'm building for the web.
 
 ## Currently Working On 🚧
 - [DJ With Friends](https://github.com/TylerJDev/DJ-With-Friends)

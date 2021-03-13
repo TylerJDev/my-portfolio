@@ -26,7 +26,7 @@ const RecentPosts = () => (
     render={data => (
       <div className={recentPostStyles.recentPosts}>
           <h2>Blog</h2>
-          <h3 className="sub-blog">Where I like to talk about accessibility, Front-End Development, TDD, JavaScript and a lot more!</h3>
+          <h3 className="sub-blog">Where I like to talk about accessibility, Frontend Development, TDD, JavaScript and a lot more!</h3>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div className="blog__post-container" key={node.id}>
               <Link to={`/${node.fields.slug}`} className="blog__post">
