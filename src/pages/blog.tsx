@@ -2,7 +2,6 @@ import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
 import Bio from "../components/blog/bio"
-import ComingSoon from "../components/blog/comingSoon"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -68,7 +67,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             </article>
           )
         })}
-        <ComingSoon />
       </div>
     </Layout>
   )
