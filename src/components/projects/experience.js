@@ -36,6 +36,19 @@ const Experience = () => (
       </section>
     </div>
 
+    <div className={experienceStyles.container}>
+      <h3>Certified Professional in Web Accessibility (CPWA)</h3>
+      <h4>Issued December 2021</h4>
+      <p>Certified Professional in Web Accessibility (CPWA).
+      Issuing authority <strong>IAAP - International Association of Accessibility Professionals.</strong></p>
+    </div>
+
+    <div className={experienceStyles.container}>
+      <h3>Web Accessibility Specialist (WAS)</h3>
+      <h4>Issued November 2021</h4>
+      <p>Web Accessibility Specialist (WAS).
+      Issuing authority <strong>IAAP - International Association of Accessibility Professionals.</strong></p>
+    </div>
 
     <div className={experienceStyles.container}>
       <h3>Certified Professional in Accessibility Core Competencies (CPACC)</h3>
