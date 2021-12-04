@@ -38,7 +38,7 @@ const Experience = () => (
 
     <div className={experienceStyles.container}>
       <h3>Certified Professional in Web Accessibility (CPWA)</h3>
-      <h4>Issued December 2021</h4>
+      <h4>Issued November 2021</h4>
       <p>Certified Professional in Web Accessibility (CPWA).
       Issuing authority <strong>IAAP - International Association of Accessibility Professionals.</strong></p>
     </div>
