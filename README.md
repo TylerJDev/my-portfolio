@@ -1,4 +1,6 @@
 # Hello Friend, my name is Tyler! 🌇
+**Note:** This is an older version of my portfolio. You can find the [new version here](https://github.com/TylerJDev/portfolio-11ty), utilizing 11ty.
+
 I'm a Frontend Engineer, I specialize mostly in the frontend & making accessible applications.
 
 ## About Me 📖
